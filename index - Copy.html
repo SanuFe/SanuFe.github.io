@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #1a1a1a;
+    }
+
+    .header {
+      text-align: center;
+      padding: 40px 20px;
+      border-bottom: 1px solid #ddd;
+      background: white;
+    }
+
+    .header h1 {
+      font-size: 48px;
+      margin: 0 0 8px 0;
+    }
+
+    .header p {
+      font-size: 16px;
+      color: #666;
+      margin: 0;
+    }
+
+    .skills {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      padding: 50px 20px;
+      background: white;
+      margin-top: 20px;
+    }
+
+    .skill {
+      text-align: center;
+    }
+
+    .skill-circle {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid #1a1a1a;
+      margin: 0 auto 12px auto;
+    }
+
+    .skill p {
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .projects {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .projects h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .project-card {
+      display: flex;
+      gap: 20px;
+      background: white;
+      border: 1px solid #ddd;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
+    .project-card img {
+      width: 160px;
+      height: 100px;
+      object-fit: cover;
+      border: 1px solid #ddd;
+      flex-shrink: 0;
+    }
+
+    .project-info h3 {
+      margin: 0 0 8px 0;
+      font-size: 16px;
+    }
+
+    .project-info p {
+      margin: 0 0 8px 0;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .project-info a {
+      font-size: 14px;
+      color: #2563eb;
+    }
+	
+	.skill svg {
+	  width: 72px;
+	  height: 72px;
+	  stroke: #1a1a1a;
+	  stroke-width: 2;
+	  fill: none;
+	  stroke-linecap: round;
+	  stroke-linejoin: round;
+	  margin-bottom: 14px;
+	}
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Sanuda Fernando</h1>
+    <p>Undergraduate BSc Computer Science (Software Engineering) Student</p>
+	<div style="margin-top: 12px; display: inline-flex; align-items: center; gap: 6px;">
+	<svg viewBox="0 0 64 64" width="18" height="18" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+	<line x1="16" y1="8" x2="16" y2="56"></line>
+	<polyline points="16,8 48,18 16,28"></polyline>
+	</svg>
+	<a href="https://www.linkedin.com/in/sanuda-fernando-6526322a9/" target="_blank" style="color: #2563eb; text-decoration: none; font-size: 14px;">
+	https://www.linkedin.com/in/sanuda-fernando-6526322a9/
+	</a>
+	</div>
+  </div>
+
+	<div class="skills">
+
+
+<div class="skill">
+  <svg viewBox="0 0 64 64" aria-label="Software Engineering">
+    <polyline points="22,20 14,32 22,44"></polyline>
+    <line x1="30" y1="48" x2="38" y2="16"></line>
+    <polyline points="42,20 50,32 42,44"></polyline>
+  </svg>
+  <p>Software Engineering</p>
+</div>
+
+<div class="skill">
+  <svg viewBox="0 0 64 64" aria-label="Web Development">
+    <circle cx="32" cy="32" r="22"></circle>
+    <line x1="10" y1="32" x2="54" y2="32"></line>
+    <ellipse cx="32" cy="32" rx="10" ry="22"></ellipse>
+    <path d="M14 22h36"></path>
+    <path d="M14 42h36"></path>
+  </svg>
+  <p>Web Development</p>
+</div>
+
+<div class="skill">
+  <svg viewBox="0 0 64 64" aria-label="Cloud Engineering">
+    <path d="
+      M18 44
+      H46
+      C52 44 56 40 56 35
+      C56 30 52 26 47 25
+      C45 19 39 15 32 15
+      C23 15 17 22 16 31
+      C11 32 8 36 8 40
+      C8 43 11 44 18 44
+    "></path>
+  </svg>
+  <p>Cloud Engineering</p>
+</div>
+
+	</div>
+
+  <div class="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <img src="project1.png" alt="Project 1 screenshot">
+      <div class="project-info">
+        <h3>eCommerce FrontEnd</h3>
+        <p>A single-page application for a fictional e-commerce store, built from scratch using vanilla <b>HTML</b>, <b>CSS</b> and <b>JavaScript</b>. No frameworks. Demonstrates Nielsen's 10 Usability Heuristics through features like live debounced search, cart undo, toast notifications, form validation, and a full checkout flow. Fully responsive across mobile, tablet and desktop.</p>
+        <a href="https://github.com/SanuFe/StarMart-ecom-frontend-HCI-Demo" target="_blank">GitHub Repo</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="project2.png" alt="Project 2 screenshot">
+      <div class="project-info">
+        <h3>FireStore Demo: Movie Review Application</h3>
+        <p>A single-page movie review app built with vanilla <b>HTML</b>, <b>JavaScript</b> and <b>Bootstrap</b>, backed by a <b>Google Firestore</b> NoSQL database. Supports adding, editing and deleting reviews with fields for movie name, director, release date and a 0–5 star rating. Data is fetched and synced in real time via Firestore's <code>onSnapshot</code> listener, with live client-side sorting across all fields.</p>
+        <a href="https://github.com/SanuFe/GCP-Firestore-Demo-Movie-Review" target="_blank">GitHub Repo</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="project3.png" alt="Project 3 screenshot">
+      <div class="project-info">
+        <h3>Student Management System: OOP Demo</h3>
+        <p>A <b>Java</b> REST API built with <b>Spring Boot</b> and backed by a <b>MySQL</b> database, modelling a university's academic domain through core <b>OOP</b> principles. The domain layer uses abstract classes, interfaces and inheritance, with a <code>Person</code> base class extended by <code>Student</code> and a <code>Course</code> interface implemented by <code>Degree</code>. A layered architecture separates controllers, services, repositories and models, and supports full CRUD on students, enrolments, modules, grades and assessments, with structured error handling via a global exception handler and SLF4J logging throughout the service layer.</p>
+        <a href="https://github.com/SanuFe/Student-Management-System-OOP-Demo" target="_blank">GitHub Repo</a>
+      </div>
+    </div>
+	
+	    <div class="project-card">
+      <img src="project4.png" alt="Project 4 screenshot">
+      <div class="project-info">
+        <h3>Weather App</h3>
+        <p>A two-panel weather app built with vanilla <b>HTML</b>, <b>CSS</b> and <b>JavaScript</b>, consuming the <b>OpenWeatherMap</b> API. On load it requests the browser's geolocation to automatically fetch local weather, and a city search field lets you look up anywhere by name. Built across three prototypes: the first calling the API directly from the client, and the third introducing a <b>PHP</b> and <b>MySQL</b> backend hosted on the university's student server. The backend acts as a caching layer, storing results in a database and serving them back for repeat queries within a one-minute window, with the client also maintaining a 30-second <code>localStorage</code> cache on top of that to avoid redundant round trips.</p>
+        <a href="https://github.com/SanuFe/weather-app" target="_blank">GitHub Repo</a>
+      </div>
+    </div>
+	
+	    <div class="project-card">
+      <img src="project5.png" alt="Project 5 screenshot">
+      <div class="project-info">
+        <h3>CampusHub: Student Portal (Business Analyst)</h3>
+        <p>A group assignment to demonstrate collaborative, <b>Agile Scrum</b> software development, building a full-stack student portal for the University of Wolverhampton. Working in a six-person team, I served as <b>Business Analyst and Product Owner</b>, translating requirements from the client into functional specifications, maintaining the product backlog, and acting as the bridge between stakeholders and the development team. This included gap analysis, flagging issues as they emerged, and keeping scope realistic across two phases. The product itself is a <b>Spring Boot</b> REST API backed by <b>MySQL</b>, with a vanilla <b>HTML/CSS/JS</b> web frontend and an <b>Expo React Native</b> mobile app, covering features like JWT authentication, events, club memberships, transport schedules, facility listings and a mental health booking portal.</p>
+        <a href="https://github.com/seniru-ekanayake/campus-hub-collaborative" target="_blank">GitHub Repo</a>
+      </div>
+    </div>
+	
+	    <div class="project-card">
+      <img src="project6.png" alt="Project 6 screenshot">
+      <div class="project-info">
+        <h3>3D Serious App: Village Builder</h3>
+        <p>A 3D serious game built in <b>Unity</b> with <b>C#</b>, designed as an educational city-builder for young children. Players manage a budget and place objects like houses, wells and fences around a village, with income passively accumulating based on what they've built, creating a simple feedback loop that introduces kids to resource management. Developed in a two-person team as a university group assignment.</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
